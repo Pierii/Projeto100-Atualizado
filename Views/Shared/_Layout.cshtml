@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ponto Digital</title>
+    <link href="~/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    @if (!"Home".Equals((string) ViewData["NomeView"])) {
+        <link href="~/css/style-pedidos-flex.css" rel="stylesheet" type="text/css">
+        
+    }
+</head>
+<body class="flex-container">
+    @RenderBody()
+</body>
+<footer>
+    <div class="section-container">
+        <address>
+            Avenida Paulista Nº XXXX
+            <br />
+            .digital@gmail.com
+            <br />
+            XX XXXX XXXX
+        </address>
+        <a href="#">Voltar para o topo!</a>
+    </div>
+</footer>

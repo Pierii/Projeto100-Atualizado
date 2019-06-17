@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Depoimentos | Ponto Digital";
+    ViewData["H2"] = "Depoimentos";
+}
+@{
+    Html.RenderPartial("_NavBar", ViewData["User"]);
+}
+<main>
+    <h2>@ViewData["H2"]</h2>
+    <form method="POST" action='@Url.Action("CadastrarDepoimento", "Depoimento")'>
+        <div>
+            <label>Nome Completo</label>
+            <input for ="nomeDepoimento" type="text" maxlength="30" minlength="4" name="nomeDepoimento">
+            <br /> 
+            <label for="texto">Insira aqui o seu <strong>Depoimento</strong></label>
+            <br />
+            <input id="textoDepoimento" type="text" maxlength="300" minlength="20" name="textoDepoimento" />
+        </div>
+        <input type="submit" value="Enviar Depoimento" />
+    </form>
+</main>

@@ -1,0 +1,14 @@
+@{
+    Html.RenderPartial("_NavBar");
+}
+
+@foreach (var item in ViewData["depoimentos"] as List<Depoimento>)
+    {
+        @if(item.Escolha.Equals("Aprovado"))
+        {
+        <h2>@item.NomeDeQuemComentou</h2>
+        <h2>@item.TextoDepoimento</h2>
+        <h2>@item.DataDepoimento</h2>
+        <br />
+        }
+    }

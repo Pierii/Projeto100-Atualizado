@@ -1,0 +1,129 @@
+﻿@using FinalProject.Models;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ponto digital</title>
+    <link href="css/style.css " rel="stylesheet" type="text/css">
+</head>
+<header>
+    @{
+    Html.RenderPartial("_NavBar", ViewData["user"]);
+    }
+    <body>
+</header>
+<section id="banner">
+    <h2>Fique de olho em tudo!</h2>
+    <p>Com esse novo sistema de ponto digital será possível ficar de olho em tudo e todos ao mesmo tempo, assim
+        economizando em pontos físicos, dinheiro, e o mais importante no TEMPO!</p>
+</section>
+<section id="linha">
+    <p>.</p>
+</section>
+<h2 id= "h2_comp">Veja uma comparação do nosso escritório</h2>
+<section id="comparacao">
+    <div id="escritorioAntigo">
+        <h3>1999</h3>
+        <img src="img/Escritorio_banner.png" alt="Primeiro escritório do Ponto digital">
+    </div>
+    <div id="escritorioAtual">
+        <h3>Atualmente</h3>
+        <img src="img/Escritorio_moderno.png" alt="Escritório atual do Ponto Digital">
+    </div>
+    </div>
+</section>
+<section id="linha">
+    <p>.</p>
+</section>
+<h2 id="h2_planos">Confira os planos<h2>
+<section id="orcamento">
+    <div class="plano">
+        <div class="img">
+            <img src="img/Moldura.png" alt="Moldura de celular" style="width: 116px;height: 234;">
+        </div>
+        <p>1 à 5 funcionários</p>
+        <br>
+        <p>R$29,99</p>
+    </div>
+    <div class="plano">
+        <div class="img">
+            <img src="img/Moldura.png" alt="Moldura de celular" style="width: 116px;height: 234;">
+        </div>
+        <p>6 á 50 funcionários</p>
+        <br>
+        <p>R$149,90</p>
+    </div>
+    <div class="plano">
+        <div class="img">
+            <img src="img/Moldura.png" alt="Moldura de celular" style="width: 116px;height: 234;">
+        </div>
+        <p>51 á 300 funcionários</p>
+        <br>
+        <p>R$300,00</p>
+    </div>
+</section>
+<section id="linha">
+    <p>.</p>
+</section>
+<section id="comentarios">
+    <a id="bt_tabela" asp-controller="Usuario" asp-action="Listar"><h2>Ver depoimentos<h2></a>
+</section>
+<section id="linha">
+    <p>.</p>
+</section>
+<section id="historia">
+<h2>História</h2>
+<p>Desde 1999 com um pequeno escritório, a ideia surgiu de um pequeno problema com o cartão de passar o ponto
+    (que na época era bem antigo), que gerou o projeto e foi seguindo em frente, e cada vez se tornando
+    populare conseguindo esse reconhecimento que temos hoje!</p>
+</section>
+<section class="conheca_pai">
+    <section id="conheca">
+        <div class="produto">
+            <h3>Conheça o produto</h3>
+            <p> É um produto inovador, sendo o pioneiro, e já está no mercado desde 1999! Com o mesmo
+                princípio de ser um ponto “mais fácil” , assim ajudando muitas empresas!</p>
+        </div>
+        <div class="equipe">
+            <h3>Conheça a equipe</h3>
+            <p> A nossa equipe só vem crescendo ao passar dos dias, e a foto de equipe cada vez ficando maior!
+                Abaixo é possível ver cada integrante, e os fundadores!</p>
+        </div>
+    </section>
+</section>
+<section id="linha">
+        <p>.</p>
+    </section>
+<section class="fundadores">
+    <div class="fundo">
+        <img src="img/Foto_equipe.png" alt="Foto da equipe do Ponto Digital">
+    </div>
+</section>
+<section id="SAC">
+    <div class="pai_ctts">
+        <div class="ctts">
+            <h2>Contatos</h2>
+        </div>
+        <div class="iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.2049206112483!2d-46.65231824130764!3d-23.566447533889466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.+Paulista+-+Bela+Vista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1sen!2sbr!4v1552654580656"
+                width="99%" height="500" frameborder="0" style="border: 5px solid #000;" allowfullscreen></iframe>
+        </div>
+    </div>
+    </section>
+        <section id="missao">
+            <h2>Missão</h2>
+            <p>Nossa missão sempre foi facilitar a vida dos usuários do nosso sistema, cada vez com mais atualizações e
+                ouvindo sujestões dos clientes assim podendo ajudar e agradar a todos que desfrutam do nosso software.</p>
+        </section>
+        <div id="conceitos">
+            <h2>Conceitos</h2>
+            <p>Os conceitos da empresa "Agora vai" são muito flexíveis, pois, podem mudar com o tempo para agradar
+                nossos clientes, onde eles basicamente são ajudar, facilitar, ouvir e melhorar. E com esses fundamentos
+                nosso software consegue evoluir com o tempo. </p>
+        </div>
+        <div id="conheca_h">
+            <a href="#historia">Conheça nossa história!</a>
+        </div>
+        </body>
+</html>

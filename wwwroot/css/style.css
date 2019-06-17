@@ -1,0 +1,177 @@
+*{
+    margin: auto;
+    color: #ffffff;
+    scroll-behavior: smooth;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+/* nav */
+nav{
+    border-style: solid;
+    border-color: #fff;
+    padding-top: 0.5em;
+    background: #ffa500;
+    color: #ffffff;
+    }
+nav h1{
+    display: none;
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+}
+nav a:hover {
+    color: #fff;
+    font-size: 1.5em;
+    transition: 0.1s;
+}
+nav > ul{
+    display: flex;
+}
+.img_logo {
+    margin: auto;
+    width: 4%;
+}
+nav li{
+    list-style: none;
+}
+/* fim nav */
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+}
+/* footer */
+footer{
+    background: #fff;
+}
+footer address{
+    color: #000;
+}
+/* fim footer */
+body{
+    background: #000000;
+}
+#banner{
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 10em;
+}
+#banner h2{
+    font-size: 5em;
+    text-align: center;
+}
+#banner p{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+}
+/* quebra de sessão */
+#linha{
+    background: #ffa500;
+}
+#linha p{
+    color:#ffa500;
+}
+/* fim da quebra */
+#comparacao{
+    background: #4242422f;
+    display: flex;
+    padding-bottom: 10px;
+}
+#h2_comp{
+    background: #4242422f;
+    text-align: center;
+    font-size: 2.5em;
+}
+#comparacao h3{
+    font-size: 2em;
+    text-align: center;
+}
+form input{
+    color: #000;
+}
+#orcamento{
+    background: #021153;
+    padding-top: 1em;
+    display: flex;
+    align-content: space-around;
+}
+#h2_planos{
+    background: #021153;
+    text-align: center;
+    font-size: 2.5em;
+}
+.plano{
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    border-style: solid;
+    border-color: #ffa500;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+.plano p{
+    color: #fff;
+}
+.plano:hover{
+    border-color: #fff;
+    padding: 2.5em;
+    transition: 0.2s;
+    cursor: not-allowed;
+}
+#bt_tabela h2{
+    text-align: center;
+    border-style: solid;
+    border-color: #fff;
+}
+#historia{
+    border-style: solid;
+    border-color: #000;
+    background-image: url(../img/Historia-fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 5em;
+}
+#historia h2{
+    font-size: 2.5em;
+    text-align: center;
+}
+#historia p{
+    width: 80%;
+    text-align: center;
+    background: #000;
+    border-style: solid;
+    border-color: #fff;
+}
+.conheca_pai{
+    background: #fff;
+}
+#conheca{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: #fff;
+}
+#conheca h3{
+    text-align: center;
+    color: #000;
+}
+#conheca p{
+    text-align: center;
+    color: #000;
+}
+.fundadores{
+    display: flex;
+    flex-direction: column;
+}
+.fundo img{
+    height: 40%;
+}
+#SAC{
+    
+}
+

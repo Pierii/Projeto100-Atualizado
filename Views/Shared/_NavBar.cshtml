@@ -1,0 +1,20 @@
+@{
+    var user = (string) ViewData["User"];
+}
+<nav>
+<h1>Ponto digital</h1>
+    <ul>
+        <li><a asp-controller="Home" asp-action="Index" class="active">Home</a></li>
+        <li><a href='@Url.Action("Index", "Home")#historia'>História</a></li>
+        <li><a href='@Url.Action("Index", "Home")#orcamento'>Orçamento</a></li>
+        <li><a href='@Url.Action("Index", "Home")#SAC'>SAC</a></li>
+        <li><a href='@Url.Action("Index", "Home")#missao'>Missão</a></li>
+        
+        @if(string.IsNullOrEmpty(user))
+        {
+            <li><a id="bt_login" asp-controller="Usuario" asp-action="Login">Login</a></li>
+        }else{
+            <li><a id="bt_logout" asp-controller="Usuario" asp-action="Logout">Logout</a></li>
+        }
+    </ul>
+</nav>

@@ -1,0 +1,33 @@
+@using FinalProject.Models;
+
+@{
+    Html.RenderPartial("_NavBar", ViewData["user"]);
+}
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Comentário</th>
+            <th>Data do depoimento</th>
+            <th>Aprovação</th>
+        </tr>
+    </thead>
+    <tbody>
+         @foreach (var item in ViewData["depoimentos"] as List<Depoimento>)
+         {      
+                <tr>
+                <td>@item.ID</td>
+                <td>@item.NomeDeQuemComentou</td>
+                <td>@item.TextoDepoimento</td>
+                <td>@item.DataDepoimento</td>
+                <td>@item.Escolha</td>
+                <td>
+                    <a href="/Depoimento/Aprovar?id=@item.ID">Aprovar</a>
+                    <a href="/Depoimento/Rejeitar?id=@item.ID">Rejeitar</a>
+                </td>
+            </tr>
+            }
+    </tbody>
+</table>
+

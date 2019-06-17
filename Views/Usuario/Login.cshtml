@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Login | Ponto Digital";
+    ViewData["H2"] = "Login";
+}
+@{
+    Html.RenderPartial("_NavBar", ViewData["User"]);
+}
+<main>
+    <h2>@ViewData["H2"]</h2>
+        <form method="POST" action='@Url.Action("Login", "Usuario")'>
+            <div>
+                <label for="email">E-mail</label>
+                <br />
+                <input id="email" type="email" name="email"/>
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <br />
+                <input id="senha" type="password" name="senha"/>
+            </div>
+            <input type="submit" value="Logar" />
+            
+            <div id="link_cadastre-se">
+                <a href='@Url.Action("Index", "Cadastro")'>Quero criar uma conta!</a>
+            </div>
+        </form>
+</main>
